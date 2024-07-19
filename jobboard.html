@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB BOARD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            align center:search-container;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .job-board {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .search-container {
+            display: flex;
+            align:center;
+            max-width: 900px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        #search-input {
+            flex-grow: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ddd;
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+            outline: none;
+        }
+        #search-button {
+            padding: 20px 15px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            align:center;
+            cursor: pointer;
+        }
+        #search-button:hover {
+            background-color: #45a049;
+        }
+        .job-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .job-card:hover {
+            transform: translateY(-6px);
+        }
+        .job-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .company {
+            font-weight: bold;
+            color: #3498db;
+        }
+        .location {
+            color: #7f8c8d;
+        }
+        .description {
+            margin-top: 10px;
+            color: #34495e;
+        }
+        .apply-btn {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .apply-btn:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <h1> Job Board</h1><br>
+    <br>
+   
+    <div class="search-container">
+        
+        
+        <button id="search-button">Search</button>
+        <input type="text" id="search-input" placeholder="find job">
+    </div>
+    <br>
+    <br>
+   
+    <div  class="job-board">
+        <div class="job-card">
+            <div class="job-title">Frontend Developer</div>
+            <div class="company">Accenture</div>
+            <div class="location">Bangalore</div>
+            <div class="description">We're looking for an experienced frontend developer to join our team and create amazing user experiences.</div>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+        <div class="job-card">
+            <div class="job-title">Project Manager</div>
+            <div class="company">TCS</div>
+            <div class="location">chennai,Tamilnadu</div>
+            <div class="description">Looking for skilled project Manager with two years experience.</div>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+        <div class="job-card">
+            <div class="job-title">Data Scientist</div>
+            <div class="company">Infosys</div>
+            <div class="location">Hyderabad,Telangana</div>
+            <div class="description">Help us uncover insights from big data and drive business decisions with advanced analytics.</div>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+        <div class="job-card">
+            <div class="job-title">Software Developer</div>
+            <div class="company">IBM</div>
+            <div class="location">Hyderabad,Telangana</div>
+            <div class="description">We are seeking a skilled software developer to join our team. The ideal candidate should have experience with JavaScript, React, and Node.js.</div>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+        
+        <div class="job-card">
+            <div class="job-title">Devops Engineer</div>
+            <div class="company">CloudSolutions</div>
+            <div class="location">Hyderabad, telangana</div>
+            <div class="description">Build and maintain our cloud infrastructure and streamline our deployment processes.</div>
+            <a href="#" class="apply-btn">Apply Now</a>
+        </div>
+        
+    </div>
+</body>
+</html>
